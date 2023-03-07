@@ -1,0 +1,54 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Noto Serif', serif;
+    font-size: 30px;
+    background-color: #100001;
+}
+
+.burger {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 40px;
+    border: none;
+    background: none;
+    color: #b6525e;
+    padding: 10px 30px;
+    cursor: pointer;
+    transition: transform 0.4s;
+}
+
+nav ul {
+    position: absolute;
+    width: 300px;
+    left: -300px;
+    height: 100vh;
+    list-style-type: none;
+    background-color: #601625;
+    padding-top: 60px;
+    transition: 0.4s;
+}
+
+nav a {
+    text-decoration: none;
+    color: #feb779;
+    padding: 20px;
+}
+
+nav a:hover {
+    font-weight: bold;
+    color: #bd4511;
+}
+
+.active {
+    transform: translateX(300px);
+}
+
+.hide {
+    display: none;
+}
